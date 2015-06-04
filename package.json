@@ -1,7 +1,7 @@
 {
   "name": "afterglow-plus",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ST3 theme Afterglow with improved Angular JS coloring",
   "repository": "https://github.com/smlombardi/afterglow-plus.git",
   "license": "MIT",
