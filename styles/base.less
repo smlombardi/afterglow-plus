@@ -79,11 +79,11 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @white;
 }
 
-.constant.numeric {
+.constant.numeric, .constant.other.color.rgb-value.scss {
   color: @wild-willow;
 }
 
-.variable.language, .variable.other {
+.variable.language, .variable.other, .variable.scss {
   color: @periwinkle;
 }
 
@@ -164,6 +164,10 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .keyword.control.html.elements {
   color: #e5b567;
+}
+
+.punctuation.definition.constant.scss {
+  color: inherit;
 }
 
 .meta.attribute-selector.css {
