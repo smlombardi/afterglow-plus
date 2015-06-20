@@ -82,7 +82,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @wild-willow;
 }
 
-.variable.language, .variable.other, .variable.scss {
+.variable.language, .variable.other, .variable.scss, .meta.set.variable .variable {
   color: @plum;
 }
 
@@ -151,11 +151,11 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .entity.other.attribute-name.id.css {
-  color: @copper;
+  color: @coral;
 }
 
 .entity.other.attribute-name.class {
-  color: @copper;
+  color: @coral;
 }
 
 .entity.other.less.mixin {
@@ -163,7 +163,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .variable.declaration.less {
-  color: @copper;
+  color: @coral;
 }
 
 .keyword.control.html.elements {
@@ -175,7 +175,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .meta.attribute-selector.css {
-  color: @copper;
+  color: @coral;
 }
 
 .keyword.control.at-rule.css.sass {
@@ -191,7 +191,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .markup.changed.git_gutter {
-  color: @copper;
+  color: @coral;
 }
 
 .markup.ignored.git_gutter {
@@ -231,7 +231,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .entity.other.attribute-name {
   color: @brandy-punch;
 }
-.entity.other.attribute-name.pseudo-class.css {
+.entity.other.attribute-name.pseudo-class.css, .entity.other.attribute-name.pseudo-element.css {
   color: @coral-tree;
 }
 .entity.other.attribute-name.class.css {
@@ -246,11 +246,26 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @tan;
 }
 
+.meta.property-list.scss
+.meta.at-rule.import.scss
+.keyword.control.at-rule.import.scss {
+  color: @dark-sea-green;
+  .punctuation.definition.keyword.scss {
+    color: inherit;
+  }
+}
+.entity.other.attribute-name.placeholder.scss {
+  color: @cadetblue;
+}
+
 
 // new angular colors
 
 .meta.tag.template.angular {
   color: @periwinkle;
+  .keyword.operator.js {
+    color: inherit;
+  }
 }
 .meta.tag.template.angular .punctuation.definition.block.begin.angular, .meta.tag.template.angular .punctuation.definition.block.end.angular {
   color: @lingonbery;
