@@ -78,8 +78,11 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @white;
 }
 
-.constant.numeric, .constant.other.color.rgb-value.scss {
-  color: @wild-willow;
+.constant.numeric {
+  color: @teal;
+}
+.constant.other.color.rgb-value.scss {
+  color: @dark-sea-green;
 }
 
 .variable.language, .variable.other, .variable.scss, .meta.set.variable .variable {
@@ -108,7 +111,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .support.function {
-  color: @mojo;
+  color: @indianred;
 }
 
 .support.type {
@@ -235,7 +238,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: @coral-tree;
 }
 .entity.other.attribute-name.class.css {
-  color: @dark-salmon;
+  color: @lightsteelblue;
 }
 
 .entity.other.attribute-name.attribute.scss {
@@ -254,6 +257,18 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
     color: inherit;
   }
 }
+
+.keyword.control.at-rule.import.scss {
+  color: @palegoldenrod;
+  .punctuation.definition.keyword.scss {
+    color: inherit;
+  }
+}
+
+.support.function.misc.scss {
+  color: @indianred;
+}
+
 .entity.other.attribute-name.placeholder.scss {
   color: @cadetblue;
 }
