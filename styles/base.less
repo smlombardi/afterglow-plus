@@ -311,18 +311,23 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 // new angular colors
 
+.keyword.control.js,
+.keyword.operator.js,
+.meta.tag.template.angular .keyword.operator.js {
+  color: @coral-tree;
+  font-weight: bold;
+}
+
+
 .meta.tag.template.angular {
   color: @thistle;
-  .keyword.operator.js {
-    color: inherit;
-  }
 }
 .meta.tag.template.angular .punctuation.definition.block.begin.angular, .meta.tag.template.angular .punctuation.definition.block.end.angular {
-  color: #fff;
+  color: @dark-khaki;
 }
 
 .meta.tag.template.angular .meta.brace.curly.js  {
-  color: #fff;
+  color: @dark-khaki;
 }
 
 .meta.attribute.html.angular .entity.other.attribute-name.html.angular {
