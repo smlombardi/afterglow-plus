@@ -1,294 +1,294 @@
 @import "colors";
 @import "syntax-variables";
 
-atom-text-editor, :host {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-atom-text-editor .gutter, :host .gutter {
+atom-text-editor .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor::shadow .wrap-guide, :host .wrap-guide {
+atom-text-editor.editor .wrap-guide {
   // color: @syntax-wrap-guide-color;
   background-color: transparent;
   border-left: 1px dashed @syntax-wrap-guide-color;
 }
 
-atom-text-editor .indent-guide, :host .indent-guide {
+atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-atom-text-editor .invisible-character, :host .invisible-character {
+atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+atom-text-editor .search-results .syntax--marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+atom-text-editor.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+atom-text-editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
   background-color: @oil;
 }
 
 
 
 
-.comment {
+.syntax--comment {
   color: @monsoon;
 }
 
-.keyword, .storage {
+.syntax--keyword, .syntax--storage {
   color: @raw-sienna;
 }
 
-.storage {
+.syntax--storage {
   color: @coral-tree;
 }
 
-.entity.name.function, .keyword.other.name-of-parameter.objc {
+.syntax--entity.syntax--name.syntax--function, .syntax--keyword.syntax--other.syntax--name-of-parameter.syntax--objc {
   color: @koromiko;
 }
 
-.entity.name {
+.syntax--entity.syntax--name {
   color: @white;
 }
 
-.constant.numeric {
+.syntax--constant.syntax--numeric {
   color: @teal;
 }
-.constant.other.color.rgb-value.scss {
+.syntax--constant.syntax--other.syntax--color.syntax--rgb-value.syntax--scss {
   color: @dark-sea-green;
 }
 
-.variable.language, .variable.other, .variable.scss, .meta.set.variable .variable {
+.syntax--variable.syntax--language, .syntax--variable.syntax--other, .syntax--variable.syntax--scss, .syntax--meta.syntax--set.syntax--variable .syntax--variable {
   color: @rosybrown;
 }
 
-.variable.parameter.function.js {
+.syntax--variable.syntax--parameter.syntax--function.syntax--js {
   color: @dark-salmon;
   font-style: italic;
 }
 
-.constant {
+.syntax--constant {
   color: @dark-sea-green;
 }
 
-.variable.other.constant {
+.syntax--variable.syntax--other.syntax--constant {
   color: @mojo;
 }
 
-.constant.language {
+.syntax--constant.syntax--language {
   color: @ship-cove;
 }
 
-.string {
+.syntax--string {
   color: @wild-willow;
 }
 
-.support.function {
+.syntax--support.syntax--function {
   color: @indianred;
 }
 
-.support.type {
+.syntax--support.syntax--type {
   color: @ship-cove;
 }
 
-.support.constant {
+.syntax--support.syntax--constant {
   color: @wild-willow;
 }
 
-.meta.tag, .declaration.tag, .entity.name.tag {
+.syntax--meta.syntax--tag, .syntax--declaration.syntax--tag, .syntax--entity.syntax--name.syntax--tag {
   color: @rob-roy;
 }
 
-.invalid {
+.syntax--invalid {
   color: @white;
   background-color: @red-berry;
 }
 
-.constant.character.escaped, .constant.character.escape, .string .source, .string .source.ruby {
+.syntax--constant.syntax--character.syntax--escaped, .syntax--constant.syntax--character.syntax--escape, .syntax--string .syntax--source, .syntax--string .syntax--source.syntax--ruby {
   color: @coral-tree;
 }
 
-.markup.inserted {
+.syntax--markup.syntax--inserted {
   color: @smoke;
   background-color: @parsley;
 }
 
-.markup.deleted {
+.syntax--markup.syntax--deleted {
   color: @smoke;
   background-color: @lonestar;
 }
 
-.meta.diff.header, .meta.separator.diff, .meta.diff.index, .meta.diff.range {
+.syntax--meta.syntax--diff.syntax--header, .syntax--meta.syntax--separator.syntax--diff, .syntax--meta.syntax--diff.syntax--index, .syntax--meta.syntax--diff.syntax--range {
   background-color: @govenor-bay;
 }
 
-.keyword.other.unit {
+.syntax--keyword.syntax--other.syntax--unit {
   color: @wild-willow;
 }
 
-.entity.other.attribute-name.id.css {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--css {
   color: @koromiko;
 }
 
-.entity.other.attribute-name.class {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--class {
   color: @koromiko;
 }
 
-.entity.other.less.mixin {
+.syntax--entity.syntax--other.syntax--less.syntax--mixin {
   color: @coral-tree;
 }
 
-.variable.declaration.less {
+.syntax--variable.syntax--declaration.syntax--less {
   color: @rosybrown;
 }
 
-.keyword.control.html.elements {
+.syntax--keyword.syntax--control.syntax--html.syntax--elements {
   color: #e5b567;
 }
 
-.punctuation.definition.constant.scss {
+.syntax--punctuation.syntax--definition.syntax--constant.syntax--scss {
   color: inherit;
 }
 
-.meta.attribute-selector.css {
+.syntax--meta.syntax--attribute-selector.syntax--css {
   color: @coral;
 }
 
-.keyword.control.at-rule.css.sass {
+.syntax--keyword.syntax--control.syntax--at-rule.syntax--css.syntax--sass {
   color: @coral-tree;
 }
 
-.keyword.control {
+.syntax--keyword.syntax--control {
   color: @lightsteelblue;
-  .punctuation {
+  .syntax--punctuation {
     color: inherit;
   }
 }
 
-.markup.deleted.git_gutter {
+.syntax--markup.syntax--deleted.syntax--git_gutter {
   color: @cannon-pink;
 }
 
-.markup.inserted.git_gutter {
+.syntax--markup.syntax--inserted.syntax--git_gutter {
   color: @wild-willow;
 }
 
-.markup.changed.git_gutter {
+.syntax--markup.syntax--changed.syntax--git_gutter {
   color: @coral;
 }
 
-.markup.ignored.git_gutter {
+.syntax--markup.syntax--ignored.syntax--git_gutter {
   color: @aluminum;
 }
 
-.markup.untracked.git_gutter {
+.syntax--markup.syntax--untracked.syntax--git_gutter {
   color: @iron;
 }
 
 // TODO: use linter classes
-.sublimelinter.mark.warning {
+.syntax--sublimelinter.syntax--mark.syntax--warning {
   color: @equator;
 }
 
-.sublimelinter.mark.error {
+.syntax--sublimelinter.syntax--mark.syntax--error {
   color: @tuscany;
 }
 
-.sublimelinter.gutter-mark {
+.syntax--sublimelinter.syntax--gutter-mark {
   color: @white;
 }
 
-.string.quoted.double.html .invalid.illegal.bad-ampersand.html {
+.syntax--string.syntax--quoted.syntax--double.syntax--html .syntax--invalid.syntax--illegal.syntax--bad-ampersand.syntax--html {
   color: @wild-willow;
   background-color: hsla(0, 0%, 18%, 1);
 }
 
-.bracket-matcher .region {
-    border-bottom: 1px solid hsla(53, 100%, 47%, 0.6);
-    border-radius: 0;
-    background-color: hsla(53, 100%, 47%, 0.2);
-    z-index: 100;
+.syntax--bracket-matcher .syntax--region {
+  border-bottom: 1px solid hsla(53, 100%, 47%, 0.6);
+  border-radius: 0;
+  background-color: hsla(53, 100%, 47%, 0.2);
+  z-index: 100;
 }
 
 // Sass and css
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
   color: @brandy-punch;
 }
-.entity.other.attribute-name.pseudo-class.css, .entity.other.attribute-name.pseudo-element.css {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-class.syntax--css, .syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-element.syntax--css {
   color: @coral-tree;
 }
-.entity.other.attribute-name.class.css {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css {
   color: @gold;
 }
 
-.entity.other.attribute-name.attribute.scss {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--attribute.syntax--scss {
   color: @tan;
 }
 
-.entity.other.attribute-name.id.css {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--css {
   color: @tan;
 }
 
-.entity.name.function.scss {
+.syntax--entity.syntax--name.syntax--function.syntax--scss {
   color: @equator;
 }
 
-.support.type.property-name.scss, .support.type.property-name.css {
+.syntax--support.syntax--type.syntax--property-name.syntax--scss, .syntax--support.syntax--type.syntax--property-name.syntax--css {
   color: @base;
 }
 
-.meta.property-list.scss
-.meta.at-rule.import.scss
-.keyword.control.at-rule.import.scss {
+.syntax--meta.syntax--property-list.syntax--scss
+.syntax--meta.syntax--at-rule.syntax--import.syntax--scss
+.syntax--keyword.syntax--control.syntax--at-rule.syntax--import.syntax--scss {
   color: @dark-sea-green;
-  .punctuation.definition.keyword.scss {
+  .syntax--punctuation.syntax--definition.syntax--keyword.syntax--scss {
     color: inherit;
   }
 }
 
-.keyword.control.at-rule.import.scss {
+.syntax--keyword.syntax--control.syntax--at-rule.syntax--import.syntax--scss {
   color: @palegoldenrod;
-  .punctuation.definition.keyword.scss {
+  .syntax--punctuation.syntax--definition.syntax--keyword.syntax--scss {
     color: inherit;
   }
 }
 
-.support.function.misc.scss {
+.syntax--support.syntax--function.syntax--misc.syntax--scss {
   color: @indianred;
 }
 
-.entity.other.attribute-name.placeholder.scss {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--placeholder.syntax--scss {
   color: @cadetblue;
 }
 
-.variable.interpolation.scss {
+.syntax--variable.syntax--interpolation.syntax--scss {
   color: @koromiko;
 }
 
@@ -296,23 +296,23 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 // i feel that in html, the colors that look ok elsewhere are too bright
 
-.string.quoted.double.html {
+.syntax--string.syntax--quoted.syntax--double.syntax--html {
   color: @base;
 }
-.punctuation.definition.tag.begin.html, .punctuation.definition.tag.end.html, .punctuation.definition.tag.html {
+.syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html, .syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html, .syntax--punctuation.syntax--definition.syntax--tag.syntax--html {
   // color: @base;
   color: @tan;
 }
-.entity.other.attribute-name.html {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
   color: @tan;
 }
-.meta.tag.inline.any.html, .meta.tag.structure.any.html, .meta.tag.any.html {
+.syntax--meta.syntax--tag.syntax--inline.syntax--any.syntax--html, .syntax--meta.syntax--tag.syntax--structure.syntax--any.syntax--html, .syntax--meta.syntax--tag.syntax--any.syntax--html {
   color: @rosybrown;
 }
-.punctuation.definition.string.begin.html, .punctuation.definition.string.end.html {
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--html, .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--html {
   color: @base;
 }
-.entity.name.tag.block.any.html, .entity.name.tag.inline.any.html, .entity.name.tag.script.html, .entity.name.tag.structure.any.html, .entity.name.tag.html {
+.syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--any.syntax--html, .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--any.syntax--html, .syntax--entity.syntax--name.syntax--tag.syntax--script.syntax--html, .syntax--entity.syntax--name.syntax--tag.syntax--structure.syntax--any.syntax--html, .syntax--entity.syntax--name.syntax--tag.syntax--html {
   color: @rosybrown;
 }
 
@@ -320,25 +320,25 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 // new angular colors
 
-.keyword.control.js,
-.keyword.operator.js,
-.meta.tag.template.angular .keyword.operator.js {
+.syntax--keyword.syntax--control.syntax--js,
+.syntax--keyword.syntax--operator.syntax--js,
+.syntax--meta.syntax--tag.syntax--template.syntax--angular .syntax--keyword.syntax--operator.syntax--js {
   color: @coral-tree;
   font-weight: bold;
 }
 
 
-.meta.tag.template.angular {
+.syntax--meta.syntax--tag.syntax--template.syntax--angular {
   color: @equator;
 }
-.meta.tag.template.angular .punctuation.definition.block.begin.angular, .meta.tag.template.angular .punctuation.definition.block.end.angular {
+.syntax--meta.syntax--tag.syntax--template.syntax--angular .syntax--punctuation.syntax--definition.syntax--block.syntax--begin.syntax--angular, .syntax--meta.syntax--tag.syntax--template.syntax--angular .syntax--punctuation.syntax--definition.syntax--block.syntax--end.syntax--angular {
   color: @dark-khaki;
 }
 
-.meta.tag.template.angular .meta.brace.curly.js  {
+.syntax--meta.syntax--tag.syntax--template.syntax--angular .syntax--meta.syntax--brace.syntax--curly.syntax--js  {
   color: @dark-khaki;
 }
 
-.meta.attribute.html.angular .entity.other.attribute-name.html.angular {
+.syntax--meta.syntax--attribute.syntax--html.syntax--angular .syntax--entity.syntax--other.syntax--attribute-name.syntax--html.syntax--angular {
   color: @lingonbery;
 }
